@@ -31,7 +31,6 @@ public class MainActivity extends Activity implements View.OnTouchListener {
         setContentView(tv);
 
 
-
     }
 
     @Override
@@ -42,7 +41,8 @@ public class MainActivity extends Activity implements View.OnTouchListener {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN: // нажатие
                 sDown = "Down: " + x + "," + y;
-                sMove = ""; sUp = "";
+                sMove = "";
+                sUp = "";
                 break;
             case MotionEvent.ACTION_MOVE: // движение
                 sMove = "Move: " + x + "," + y;
@@ -56,8 +56,6 @@ public class MainActivity extends Activity implements View.OnTouchListener {
         tv.setText(sDown + "\n" + sMove + "\n" + sUp);
         return true;
     }
-
-
 
 
     class DrawView extends View {
