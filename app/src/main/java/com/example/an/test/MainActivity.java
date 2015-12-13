@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends Activity implements View.OnTouchListener {
-
+    // tst1
     TextView tv;
     float x;
     float y;
